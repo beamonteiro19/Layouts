@@ -1,0 +1,50 @@
+{
+  "questions": [
+    {
+      "question": "Esta placa representa o que?",
+      "answer1": "Presença de mão única em horários específicos.",
+      "answer2": "Tréfego de veículos em ambos os sentidos.",
+      "answer3": "Desvio obrigatório para rota alternativa.",
+      "answer4": "Proibição de conversões à esquerda e à direita.",
+      "correct": "Tréfego de veículos em ambos os sentidos.",
+      "image": "a26b"
+    },
+    {
+      "question": "O que a placa A22 alerta sobre a ponte à frente?",
+      "answer1": "Possível presença de animais selvagens.",
+      "answer2": "Risco de deslizamento em pista molhada.",
+      "answer3": "Travessia de pedestres em faixa não sinalizada.",
+      "answer4": "Largura reduzida da ponte, exigindo atenção redobrada.",
+      "correct": "Largura reduzida da ponte, exigindo atenção redobrada.",
+      "image": "a22"
+    },
+    {
+      "question": "Qual a principal consequência para um veículo que excede o peso máximo por eixo indicado na placa R17?",
+      "answer1": "Multa de trânsito e apreensão do veículo.",
+      "answer2": "Suspensão do direito de dirigir.",
+      "answer3": "Cancelamento do licenciamento anual.",
+      "answer4": "Obrigatoriedade de transbordo da carga excedente.",
+      "correct": "Multa de trânsito e apreensão do veículo.",
+      "image": "r17"
+    },
+    {
+      "question": "O que a placa R40 proíbe?",
+      "answer1": " Circulação de pedestres.",
+      "answer2": "Tráfego de veículos de tração animal.",
+      "answer3": "Passagem de bicicletas.",
+      "answer4": "Trânsito de veículos de propulsão humana, como carros de mão.",
+      "correct": "Trânsito de veículos de propulsão humana, como carros de mão.",
+      "image":"r40"
+    },
+    {
+      "question": "Em qual situação o uso de correntes em pneus é obrigatório, conforme a placa R22?",
+      "answer1": "Em rodovias com neblina densa.",
+      "answer2": "Em áreas com neve na pista.",
+      "answer3": "Em terrenos acidentados com lama.",
+      "answer4": "Em qualquer via com declive acentuado.",
+      "correct": "Em áreas com neve na pista.",
+      "image":"r22"
+    }
+
+  ]
+}

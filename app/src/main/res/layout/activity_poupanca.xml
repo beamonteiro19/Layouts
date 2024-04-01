@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_econobia"
+    tools:context=".Poupanca">
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/logo_econobia"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp">
+
+    </ImageView>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+
+
+            android:layout_marginTop="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:fontFamily="@font/lexend_deca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Valor inicial:"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:fontFamily="@font/lexend_deca"
+                        android:hint="Valor em R$. Ex.: 1700,00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/lexend_deca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aplicação Mensal:"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:fontFamily="@font/lexend_deca"
+                        android:hint="Ex.: R$100.00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/lexend_deca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tempo da aplicação"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:fontFamily="@font/lexend_deca"
+                        android:hint="Em meses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/lexend_deca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Taxa:"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:fontFamily="@font/lexend_deca"
+                        android:hint="Ex.:0.02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number" />
+                    <Button
+                        android:fontFamily="@font/lexend_deca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:backgroundTint="@color/purple_200"
+                        android:paddingStart="100dp"
+                        android:paddingEnd="100dp"
+                        android:text="Calcular"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

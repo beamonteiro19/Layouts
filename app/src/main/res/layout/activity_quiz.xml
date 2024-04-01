@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_quiz_2"
+    android:orientation="vertical"
+    tools:context=".Quiz">
+
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/TestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/questionImage"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/quizText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_deca"
+                android:gravity="center"
+                android:padding="25dp"
+                android:textColor="@color/text_secondary_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- CARD R1-->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/TestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/aanswer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/lexend_deca"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:textColor="@color/text_secondary_color"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <!-- CARD R2-->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/TestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/banswer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/lexend_deca"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:textColor="@color/text_secondary_color"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <!-- CARD R3-->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/TestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/canswer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/lexend_deca"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:textColor="@color/text_secondary_color"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <!-- CARD R4-->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/TestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/danswer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/lexend_deca"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:textColor="@color/text_secondary_color"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

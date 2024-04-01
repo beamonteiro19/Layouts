@@ -1,0 +1,314 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pizza">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_pizzaria"
+        android:scaleType="centerCrop"></RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+            <!-- CONJUNTO 1 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pizza1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="25dp"
+                app:strokeWidth="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_cards">
+
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/marguerita" />
+
+                    <TextView
+                        android:id="@+id/textPizza1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/bungee"
+                        android:text="Mexicana"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPizza1"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtPizza1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:fontFamily="@font/lexend_deca"
+                            android:hint="Quantidade"
+                            android:inputType="number"
+                            android:textColorHint="#4b6a27"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/pricePizza1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_light_italic"
+                            android:text="R$49.50"
+                            android:textColor="#c78c50" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pizza2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="25dp"
+                app:strokeWidth="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_cards">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/francesa" />
+
+                    <TextView
+                        android:id="@+id/textPizza2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/bungee"
+                        android:text="Francesa"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPizza2"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtPizza2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:fontFamily="@font/lexend_deca"
+                            android:hint="Quantidade"
+                            android:inputType="number"
+                            android:textColorHint="#4b6a27"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/pricePizza2"
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_light_italic"
+                            android:text="R$79.50"
+                            android:textColor="#c78c50" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pizza3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="25dp"
+                app:strokeWidth="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_cards">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/peperoni" />
+
+                    <TextView
+                        android:id="@+id/textPizza3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/bungee"
+                        android:text="Peperoni"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPizza3"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtPizza3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:fontFamily="@font/lexend_deca"
+                            android:hint="Quantidade"
+                            android:inputType="number"
+                            android:textColorHint="#4b6a27"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/pricePizza3"
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_light_italic"
+                            android:text="R$59.50"
+                            android:textColor="#c78c50" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pizza4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="25dp"
+                app:strokeWidth="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_cards">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/marguerita" />
+
+                    <TextView
+                        android:id="@+id/textPizza4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/bungee"
+                        android:text="Marguerita"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPizza4"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtPizza4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:fontFamily="@font/lexend_deca"
+                            android:hint="Quantidade"
+                            android:inputType="number"
+                            android:textColorHint="#4b6a27"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/pricePizza4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_light_italic"
+                            android:text="R$49.50"
+                            android:textColor="#c78c50" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <Button
+                    android:textSize="17sp"
+                    android:fontFamily="@font/bungee"
+                    android:id="@+id/btnBuyPizza"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:backgroundTint="#a30110"
+                    android:text="Realizar pedido" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
